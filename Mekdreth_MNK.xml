@@ -1,0 +1,82 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Precast">
+			<lear>Silver Earring</lear>
+			<rear>Silver Earring</rear>
+			<lring>Silver Ring</lring>
+			<rring>Silver Ring</rring>
+		</set>
+\		<set name="Melee">
+			<ammo augment="S365936635475362194">Aumoniere +1</ammo>
+			<head>Anchor. Crown +1</head>
+			<body>Anch. Cyclas +1</body>
+			<hands>Hes. Gloves +1</hands>
+			<legs>Bhikku Hose +1</legs>
+			<feet>Bhikku Gaiters +1</feet>
+			<neck>Nefarious Collar</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1 augment="S797537937839468334">Moonshade Earring</ear1>
+			<ear2 augment="S264959552431504609">Stm. Earring +1</ear2>
+			<ring1 augment="S797537937839468334">Castor's Ring</ring1>
+			<ring2>Rajas Ring</ring2>
+			<back>Bushido Cape</back>
+		</set>
+		<set name="Stand">
+			<ear1 augment="S797537937839468334">Moonshade Earring</ear1>
+			<ear2 augment="S264959552431504609">Stm. Earring +1</ear2>
+			<ring1 augment="S797537937839468334">Castor's Ring</ring1>
+			<ring2>Rajas Ring</ring2>
+		</set>
+		<set name="Weaponskill">
+			<neck>Justiciar's Torque</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1 augment="S797537937839468334">Moonshade Earring</ear1>
+			<ear2 augment="S264959552431504609">Stm. Earring +1</ear2>
+			<ring1 augment="S797537937839468334">Castor's Ring</ring1>
+			<ring2 augment="S2695132774816416711">Dark Ring</ring2>
+			<back>Bushido Cape</back>
+		</set>
+		<set name="MAB" baseset="TP">
+			<neck augment="S6213623999501114467">Justice Badge</neck>
+			<waist augment="S6213623999501114467">Friar's Rope</waist>
+			<ring1 augment="S6213623999501114467">Shiva Ring</ring1>
+			<ring2 augment="S6213623999501114467">Shiva Ring</ring2>
+			<ear1 augment="S6213623999501114467">Silver Earring</ear1>
+			<ear2 augment="S6213623999501114467">Silver Earring</ear2>
+			<back augment="S6213623999501114467">Pilferer's Mantle</back>
+        </set>
+
+	</sets>
+
+	<inputcommands>
+	</inputcommands>
+
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+
+	<midmagic>
+		<equip set="Stand" />
+	</midmagic>
+
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="Melee" />
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+	</jobability>
+
+	<weaponskill>
+		<equip set="Weaponskill"/>
+	</weaponskill>
+
+</ashitacast>

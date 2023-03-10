@@ -1,0 +1,74 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Precast">
+			<lear>Silver Earring</lear>
+			<rear>Silver Earring</rear>
+			<lring>Silver Ring</lring>
+			<rring>Silver Ring</rring>
+		</set>
+		<set name="Stand">
+			<main>Yagrush</main>
+			<sub>Sors Shield</sub>
+			<ammo>Vanir Battery</ammo>
+			<head>Ebers Cap +1</head>
+			<body>Theo. Bliaut +1</body>
+			<hands>Ebers Mitts +1</hands>
+			<legs>Ebers Pant. +1</legs>
+			<feet>Piety Duckbills +1</feet>
+			<neck>Nuna Gorget</neck>
+			<waist>Witful Belt</waist>
+			<ear1 augment="S264959552431504609">Stm. Earring +1</ear1>
+			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
+			<ring1>Rajas Ring</ring1>
+			<ring2 augment="S797537937839468334">Castor's Ring</ring2>
+			<back>Nexus Cape</back>
+		</set>
+		<set name="Melee">
+			<main>Yagrush</main>
+			<sub>Sors Shield</sub>
+			<ammo>Vanir Battery</ammo>
+			<head>Ebers Cap +1</head>
+			<body>Theo. Bliaut +1</body>
+			<hands>Ebers Mitts +1</hands>
+			<legs>Ebers Pant. +1</legs>
+			<feet>Piety Duckbills +1</feet>
+			<neck>Nuna Gorget</neck>
+			<waist>Witful Belt</waist>
+			<ear1 augment="S264959552431504609">Stm. Earring +1</ear1>
+			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
+			<ring1>Rajas Ring</ring1>
+			<ring2 augment="S797537937839468334">Castor's Ring</ring2>
+			<back>Dew Silk Cape +1</back>
+		</set>
+		<set name="Midcast">
+			<back>Dew Silk Cape +1</back>
+		</set>
+	</sets>
+
+	<inputcommands>
+	</inputcommands>
+
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+
+	<midmagic>
+		<equip set="Midcast" />
+	</midmagic>
+
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="Melee" />
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+	</jobability>
+</ashitacast>

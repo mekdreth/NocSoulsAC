@@ -1,0 +1,59 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Precast">
+			<lear>Silver Earring</lear>
+			<rear>Silver Earring</rear>
+			<lring>Silver Ring</lring>
+			<rring>Silver Ring</rring>
+		</set>
+		<set name="MAB" baseset="Stand">
+			<neck augment="S6213623999501114467">Justice Badge</neck>
+			<waist augment="S6213623999501114467">Friar's Rope</waist>
+			<ring1 augment="S6213623999501114467">Shiva Ring</ring1>
+			<ring2 augment="S6213623999501114467">Shiva Ring</ring2>
+			<ear1 augment="S6213623999501114467">Silver Earring</ear1>
+			<ear2 augment="S6213623999501114467">Silver Earring</ear2>
+			<back augment="S6213623999501114467">Pilferer's Mantle</back>
+        </set>
+
+		<set name="Stand">
+			<head>Spae. Petasos +1</head>
+			<body>Wicce Coat +1</body>
+			<hands>Wicce Gloves +1</hands>
+			<legs>Wicce Chausses +1</legs>
+			<feet>Spae. Sabots +1</feet>
+		</set>
+	</sets>
+
+	<inputcommands>
+	</inputcommands>
+
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+
+	<midmagic>
+		<equip set="MAB" />
+	</midmagic>
+
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="Melee" />
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+	</jobability>
+
+	<weaponskill>
+		<equip set="Weaponskill"/>
+	</weaponskill>
+
+</ashitacast>

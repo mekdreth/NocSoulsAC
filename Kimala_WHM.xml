@@ -1,0 +1,61 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+\		<set name="Precast">
+			<lear>Silver Earring</lear>
+			<rear>Silver Earring</rear>
+			<lring>Silver Ring</lring>
+			<rring>Silver Ring</rring>
+		</set>
+		<set name="Stand">
+			<ear1 augment="S3602243710375018469">Insomnia Earring</ear1>
+			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
+			<ring1 augment="S797537937839468334">Castor's Ring</ring1>
+			<ring2 augment="S93590259078468708">Kldg. Ring +1</ring2>
+			<back>Nexus Cape</back>
+		</set>
+		<set name="Midcast">
+\			<head>Adhara Turban</head>
+			<body>Shedir Manteel</body>
+			<hands augment="S445436765840768708">Tct.Mgc. Cuffs</hands>
+			<legs augment="S445436765840768708">Tct.Mgc. Slops</legs>
+			<feet augment="S102103689463108323">Gende. Galoshes</feet>
+			<neck augment="S1102129142792114666">Cerulean Pendant</neck>
+			<waist>Hojutsu Belt</waist>
+			<ear1 augment="S3602243710375018469">Insomnia Earring</ear1>
+			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
+			<ring1 augment="S797537937839468334">Castor's Ring</ring1>
+			<ring2 augment="S93590259078468708">Kldg. Ring +1</ring2>
+			<back>Solitaire Cape</back>
+		</set>
+	</sets>
+
+	<variables>
+	</variables>
+
+	<inputcommands>
+	</inputcommands>
+	
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+
+	<midmagic>
+		<equip set="Midcast" />
+	</midmagic>
+
+	<idlegear>
+		<equip set="Stand" />
+	</idlegear>
+
+	<jobability>
+	</jobability>
+
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

@@ -1,0 +1,242 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<head>Skulker's Bonnet +1</head>
+			<body>Skulker's Vest +1</body>
+			<hands>Skulk. Armlets +1</hands>
+			<legs>Skulk. Culottes +1</legs>
+			<feet>Plun. Poulaines +1</feet>
+			<neck>Ej Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1 augment="S1100398455412612800">Avenger's Earring</ear2>
+			<ear2>Moonshade Earring</ear2>
+			<ring1>Rajas Ring</ring1>
+			<ring2>Castor's Ring</ring2>
+			<back>Bushido Cape</back>
+		</set>
+		<set name="TP-Default">
+			<head>Skulker's Bonnet +1</head>
+			<body>Skulker's Vest +1</body>
+			<hands>Skulk. Armlets +1</hands>
+			<legs>Skulk. Culottes +1</legs>
+			<feet>Plun. Poulaines +1</feet>
+			<neck>Ej Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1 augment="S797537937839468334">Moonshade Earring</ear1>
+			<ear2 augment="S1100398455412612800">Avenger's Earring</ear2>
+			<ring1 augment="S797537937839468334">Castor's Ring</ring1>
+			<ring2>Rajas Ring</ring2>
+			<back>Bushido Cape</back>
+		</set>
+		<set name="TP-TH" baseset="TP-Default">
+			<hands>Plun. Armlets +1</hands>
+			<legs>Plun. Culottes +1</legs>
+			<feet>Skulk. Poulaines +1</feet>
+		</set>
+
+		<!-- Weapon Skills -->
+		<set name="WS-Default">
+			<head>Skulker's Bonnet +1</head>
+			<body>Skulker's Vest +1</body>
+			<hands>Skulk. Armlets +1</hands>
+			<legs>Plun. Culottes +1</legs>
+			<feet>Plun. Poulaines +1</feet>
+			<neck>Ej Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1 augment="S1100398455412612800">Avenger's Earring</ear1>
+			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
+			<ring1 augment="S7093246396013218759">Dark Ring</ring1>
+			<ring2 augment="S1815550315936418759">Dark Ring</ring2>
+			<back>Bushido Cape</back>
+		</set>
+		<set name="WS-TH">
+			<hands>Plun. Armlets +1</hands>
+			<legs>Plun. Culottes +1</legs>
+			<feet>Skulk. Poulaines +1</feet>
+		</set>
+
+		<set name="fTPWS-Default">
+			<head>Pill. Bonnet +1</head>
+			<body>Pillager's Vest +1</body>
+			<hands>Pill. Armlets +1</hands>
+			<legs>Pill. Culottes +1</legs>
+			<feet>Plun. Poulaines +1</feet>
+			<neck>Ej Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1 augment="S1100398455412612800">Avenger's Earring</ear2>
+			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
+			<ring1 augment="S7093246396013218759">Dark Ring</ring1>
+			<ring2 augment="S1815550315936418759">Dark Ring</ring2>
+			<back>Bushido Cape</back>
+		</set>
+		<set name="fTPWS-TH" baseset="CritWS-Default">
+			<hands>Plun. Armlets +1</hands>
+			<legs>Plun. Culottes +1</legs>
+			<feet>Skulk. Poulaines +1</feet>
+		</set>
+
+		<set name="CritWS-Default" baseset="fTPWS-Default">
+		</set>
+		<set name="CritWS-TH" baseset="CritWS-Default">
+			<hands>Plun. Armlets +1</hands>
+			<legs>Plun. Culottes +1</legs>
+			<feet>Skulk. Poulaines +1</feet>
+		</set>
+
+        <set name="MagWS-Default" baseset="MACC">
+			<ring1>Fenrir Ring</ring1>
+			<ring2>Fenrir Ring</ring2>
+        </set>
+        <set name="MagWS-TH" baseset="MagWS-Default">
+			<hands>Plun. Armlets +1</hands>
+			<legs>Plun. Culottes +1</legs>
+			<feet>Skulk. Poulaines +1</feet>
+        </set>
+
+		<!-- Casting -->
+		<set name="Precast">
+			<ear1 augment="S357862135645568332">Silver Earring</ear1>
+			<ear2 augment="S357862135645568332">Silver Earring</ear2>
+			<ring1 augment="S357862135645568332">Silver Ring</ring1>
+			<ring2 augment="S357862135645568332">Silver Ring</ring2>
+		</set>
+		<set name="Enspell">
+			<head augment="S8301439459622419328">Bone Hairpin</head>
+			<body augment="S8301439459622419328">Field Tunica</body>
+			<hands augment="S8301439459622419328">Field Gloves</hands>
+			<legs augment="S8301439459622419328">Field Hose</legs>
+			<feet augment="S8301439459622419328">Field Boots</feet>
+			<neck augment="S8301439459622419328">Justice Badge</neck>
+			<waist augment="S8301439459622419328">Friar's Rope</waist>
+			<ear1 augment="S8301439459622419328">Silver Earring</ear1>
+			<ear2 augment="S8301439459622419328">Silver Earring</ear2>
+			<ring1 augment="S8301439459622419328">Copper Ring</ring1>
+			<ring2 augment="S8301439459622419328">Copper Ring</ring2>
+			<back augment="S8301439459622419328">Warlock's Mantle</back>
+		</set>
+        <set name="MACC" baseset="TP-Default">
+			<head augment="S6213623999501114467">Aetosaur Helm</head>
+			<body augment="S6213623999501114467">Haruspex Coat</body>
+			<neck augment="S6213623999501114467">Justice Badge</neck>
+			<waist augment="S6213623999501114467">Friar's Rope</waist>
+			<ring1 augment="S6213623999501114467">Fenrir Ring</ring1>
+			<ring2 augment="S6213623999501114467">Fenrir Ring</ring2>
+			<ear1 augment="S6213623999501114467">Silver Earring</ear1>
+			<ear2 augment="S6213623999501114467">Silver Earring</ear2>
+			<back augment="S6213623999501114467">Pilferer's Mantle</back>
+        </set>
+	</sets>
+
+	<variables>
+		<!-- Values: TH or Default -->
+		<var name="TH">Default</var>
+	</variables>
+
+	<inputcommands>
+		<cmd input="/toggleth">
+			<if advanced="$TH=Default">
+				<setvar name="TH" value="TH" />
+				<addtochat color="57">TH On!</addtochat>
+			</if>
+			<else>
+				<setvar name="TH" value="Default" />
+				<addtochat color="57">TH Off!</addtochat>
+			</else>
+		</cmd>
+		<cmd input="/weapons">
+			<if advanced="$TH=Default">
+				<equip>
+					<main>Vajra</main>
+					<sub>Sandung</sub>
+				</equip>
+			</if>
+			<else>
+				<equip>
+					<main>Vajra</main>
+					<sub>Mandau</sub>
+				</equip>
+			</else>
+		</cmd>
+	</inputcommands>
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+
+	<midmagic>
+        <if ad_skill="bluemagic|enfeeblingmagic|elementalmagic|darkmagic">
+            <equip set="MACC" />
+        </if>
+		<if ad_name="Subduction">
+			<if advanced="$TH=TH">
+				<equip set="MagWS-TH" />
+			</if>
+		</if>
+		<if ad_name="en*">
+			<equip set="Enspell" />
+		</if>
+        <if ad_name="Stoneskin|Metallic*|Diamondhide">
+            <if buffactive="37">
+                <command>/cancel 37</command>
+            </if>
+        </if>
+        <if ad_name="Shock Spikes">
+            <if buffactive="38">
+                <command>/cancel 38</command>
+            </if>
+        </if>
+	</midmagic>
+
+	<idlegear>
+		<if eq_back="Nexus Cape">
+            <equip lock="true">
+                <back>Nexus Cape</back>
+            </equip>
+        </if>
+		<if p_status="engaged">
+			<equip set="TP-$TH" />
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+        <if ad_name="Flee|Steal">
+            <equip feet="Pill. Poulaines +1" />
+        </if>
+        <if ad_name="Hide">
+            <equip body="Pillager's Vest +1" />
+        </if>
+        <if ad_name="Despoil">
+            <equip>
+                <legs>Skulk. Culottes +1</legs>
+                <feet>Skulk. Poulaines +1</feet>
+            </equip>
+        </if>
+        <if ad_name="Conspirator">
+            <equip body="Skulker's Vest +1" />
+        </if>
+        <if ad_name="Accomplice|Collaborator">
+            <equip head="Skulker's Bonnet +1" />
+        </if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Aeolian*|Cyclone|Gust*">
+			<equip set="MagWS-$TH" />
+		</if>
+		<elseif ad_name="Evisceration">
+			<equip set="CritWS-$TH" />
+		</elseif>
+		<elseif ad_name="Dancing Edge|Exenterator|Pyrrhic Kleos">
+			<equip set="fTPWS-$TH" />
+		</elseif>
+		<else>
+			<equip set="WS-$TH" />
+		</else>
+	</weaponskill>
+</ashitacast>
