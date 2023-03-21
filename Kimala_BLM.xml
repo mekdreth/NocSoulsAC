@@ -13,21 +13,39 @@
 			<ring2 augment="S357862135645568332">Silver Ring</ring2>
 		</set>
 		<set name="MAB" baseset="Stand">
-			<neck augment="S6213623999501114467">Justice Badge</neck>
-			<waist augment="S6213623999501114467">Friar's Rope</waist>
-			<ring1 augment="S6213623999501114467">Shiva Ring</ring1>
-			<ring2 augment="S6213623999501114467">Shiva Ring</ring2>
-			<ear1 augment="S6213623999501114467">Silver Earring</ear1>
-			<ear2 augment="S6213623999501114467">Silver Earring</ear2>
-			<back augment="S6213623999501114467">Pilferer's Mantle</back>
-        </set>
-
-		<set name="Stand">
 			<head augment="S6213623999501114467">Spae. Petasos +1</head>
 			<body augment="S6213623999501114467">Wicce Coat +1</body>
 			<hands augment="S6213623999501114467">Wicce Gloves +1</hands>
 			<legs augment="S6213623999501114467">Wicce Chausses +1</legs>
 			<feet augment="S6213623999501114467">Spae. Sabots +1</feet>
+			<neck augment="S6213623999501114467">Justice Badge</neck>
+			<waist augment="S6213623999501114467">Friar's Rope</waist>
+			<ear1 augment="S6213623999501114467">Silver Earring</ear1>
+			<ear2 augment="S6213623999501114467">Silver Earring</ear2>
+			<ring1 augment="S6213623999501114467">Fenrir Ring</ring1>
+			<ring2 augment="S6213623999501114467">Fenrir Ring</ring2>
+			<back augment="S6213623999501114467">Pilferer's Mantle</back>
+        </set>
+		<set name="Melee" baseset="Stand">
+		</set>
+		<set name="Weaponskill" baseset="Melee">
+		</set>
+		<set name="Stand">
+			<main>Blurred Staff</main>
+			<sub>Magic Strap</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="S93286757950756262">Hagondes Hat</head>
+			<body augment="S6213623999501114467">Haruspex Coat</body>
+			<hands augment="S6213623999501114467">Wicce Gloves +1</hands>
+			<legs augment="S6213623999501114467">Wicce Chausses +1</legs>
+			<feet augment="S6213623999501114467">Spae. Sabots +1</feet>
+			<neck augment="S1102129142792114666">Cerulean Pendant</neck>
+			<waist augment="S357948036302228334">Windbuffet Belt +1</waist>
+			<ear1 augment="S797537937839468334">Moonshade Earring</ear1>
+			<ear2 augment="S292738377761134">Valor Earring</ear2>
+			<ring1>Supershear Ring</ring1>
+			<ring2 augment="S797537937839468334">Castor's Ring</ring2>
+			<back>Kumbira Cape</back>
 		</set>
 	</sets>
 
