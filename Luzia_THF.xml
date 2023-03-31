@@ -19,10 +19,10 @@
 			<ring2>Castor's Ring</ring2>
 		</set>
 		<set name="Precast">
-			<lear>Silver Earring</lear>
-			<rear>Silver Earring</rear>
-			<lring>Silver Ring</lring>
-			<rring>Silver Ring</rring>
+			<ear1 augment="S357862135645568332">Silver Earring</ear1>
+			<ear2 augment="S357862135645568332">Silver Earring</ear2>
+			<ring1 augment="S357862135645568332">Copper Ring</ring1>
+			<ring2 augment="S357862135645568332">Copper Ring</ring2>
 		</set>
 	</sets>
 

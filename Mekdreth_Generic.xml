@@ -7,38 +7,15 @@
 	</settings>
 	<sets>
 		<set name="Stand">
-			<ear1>Stm. Earring +1</ear1>
-			<ear2>Moonshade Earring</ear2>
-			<ring1>Rajas Ring</ring1>
-			<ring2>Castor's Ring</ring2>
+			<back>Nexus Cape</back>
 		</set>
-		<set name="Melee">
-			<ear1>Stm. Earring +1</ear1>
-			<ear2>Moonshade Earring</ear2>
-			<ring1>Rajas Ring</ring1>
-			<ring2>Castor's Ring</ring2>
+		<set name="Melee" baseset="Stand">
 		</set>
-
 		<set name="Precast">
 			<ear1 augment="S357862135645568332">Silver Earring</ear1>
 			<ear2 augment="S357862135645568332">Silver Earring</ear2>
 			<ring1 augment="S357862135645568332">Silver Ring</ring1>
 			<ring2 augment="S357862135645568332">Silver Ring</ring2>
-		</set>
-		<set name="MAB" baseset="Stand">
-			<neck augment="S6213623999501114467">Justice Badge</neck>
-			<waist augment="S6213623999501114467">Friar's Rope</waist>
-			<ring1 augment="S6213623999501114467">Shiva Ring</ring1>
-			<ring2 augment="S6213623999501114467">Shiva Ring</ring2>
-			<ear1 augment="S6213623999501114467">Silver Earring</ear1>
-			<ear2 augment="S6213623999501114467">Silver Earring</ear2>
-			<back augment="S6213623999501114467">Pilferer's Mantle</back>
-        </set>
-		<set name="Enspell">
-			<ear1 augment="S8301439459622419328">Opal Earring</ear1>
-			<ear2 augment="S8301439459622419328">Opal Earring</ear2>
-			<ring1 augment="S8301439459622419328">Copper Ring</ring1>
-			<ring2 augment="S8301439459622419328">Copper Ring</ring2>
 		</set>
 	</sets>
 
@@ -51,12 +28,6 @@
 
 	<midmagic>
 		<equip set="Stand" />
-        <if ad_skill="bluemagic|enfeeblingmagic|elementalmagic|darkmagic">
-            <equip set="MAB" />
-        </if>
-		<if ad_name="en*">
-			<equip set="Enspell" />
-		</if>
 	</midmagic>
 
 	<idlegear>

@@ -7,23 +7,62 @@
 	</settings>
 	<sets>
 		<set name="Stand">
-			<ear1>Stm. Earring +1</ear1>
-			<ear2>Moonshade Earring</ear2>
-			<ring1>Rajas Ring</ring1>
-			<ring2>Castor's Ring</ring2>
+			<head>Anchor. Crown +1</head>
+			<body>Anch. Cyclas +1</body>
+			<hands>Hes. Gloves +1</hands>
+			<legs>Bhikku Hose +1</legs>
+			<feet>Bhikku Gaiters +1</feet>
+			<neck augment="S357948036302228334">Ej Necklace</neck>
+			<waist augment="S357948036302228334">Windbuffet Belt +1</waist>
+			<ear1 augment="S1100398455412612800">Avenger's Earring</ear1>
+			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
+			<ring1 augment="S357948036302228334">Rajas Ring</ring1>
+			<ring2 augment="S797537937839468334">Castor's Ring</ring2>
+			<back>Nexus Cape</back>
 		</set>
-		<set name="Melee">
-			<ear1>Stm. Earring +1</ear1>
-			<ear2>Moonshade Earring</ear2>
-			<ring1>Rajas Ring</ring1>
-			<ring2>Castor's Ring</ring2>
+
+		<!-- Melee -->
+		<set name="TP">
+			<back augment="S357948036302228334">Bushido Cape</back>
 		</set>
+		<set name="WS" baseset="TP">
+		</set>
+		<set name="fTPWS" baseset="WS">
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+		</set>
+
+		<!-- Casting -->
 		<set name="Precast">
-			<lear>Silver Earring</lear>
-			<rear>Silver Earring</rear>
-			<lring>Silver Ring</lring>
-			<rring>Silver Ring</rring>
+			<ear1 augment="S357862135645568332">Silver Earring</ear1>
+			<ear2 augment="S357862135645568332">Silver Earring</ear2>
+			<ring1 augment="S357862135645568332">Silver Ring</ring1>
+			<ring2 augment="S357862135645568332">Silver Ring</ring2>
 		</set>
+		<set name="Enspell">
+			<head augment="S8301439459622419328">Bone Hairpin</head>
+			<body augment="S8301439459622419328">Field Tunica</body>
+			<hands augment="S8301439459622419328">Field Gloves</hands>
+			<legs augment="S8301439459622419328">Field Hose</legs>
+			<feet augment="S8301439459622419328">Field Boots</feet>
+			<neck augment="S8301439459622419328">Justice Badge</neck>
+			<waist augment="S8301439459622419328">Friar's Rope</waist>
+			<ear1 augment="S8301439459622419328">Silver Earring</ear1>
+			<ear2 augment="S8301439459622419328">Silver Earring</ear2>
+			<ring1 augment="S8301439459622419328">Copper Ring</ring1>
+			<ring2 augment="S8301439459622419328">Copper Ring</ring2>
+			<back augment="S8301439459622419328">Warlock's Mantle</back>
+		</set>
+        <set name="MACC" baseset="TP">
+			<body augment="S6213623999501114467">Haruspex Coat</body>
+			<neck augment="S6213623999501114467">Justice Badge</neck>
+			<waist augment="S6213623999501114467">Friar's Rope</waist>
+			<ring1 augment="S6213623999501114467">Fenrir Ring</ring1>
+			<ring2 augment="S6213623999501114467">Fenrir Ring</ring2>
+			<ear1 augment="S6213623999501114467">Silver Earring</ear1>
+			<ear2 augment="S6213623999501114467">Silver Earring</ear2>
+			<back augment="S6213623999501114467">Pilferer's Mantle</back>
+        </set>
 	</sets>
 
 	<inputcommands>
@@ -34,7 +73,12 @@
 	</premagic>
 
 	<midmagic>
-		<equip set="Stand" />
+        <if ad_skill="bluemagic|enfeeblingmagic|elementalmagic|darkmagic">
+            <equip set="MACC" />
+        </if>
+		<if ad_name="en*">
+			<equip set="Enspell" />
+		</if>
 	</midmagic>
 
 	<idlegear>
@@ -45,5 +89,20 @@
 	</idlegear>
 
 	<jobability>
+        <if ad_name="Focus">
+			<equip>
+				<head>Anchor. Crown +1</head>
+			</equip>
+        </if>
+        <if ad_name="Chakra">
+			<equip>
+            	<body>Anch. Cyclas +1</body>
+				<hands>Hes. Gloves +1</hands>
+			</equip>
+        </if>
 	</jobability>
+
+	<weaponskill>
+		<equip set="fTPWS" />
+	</weaponskill>
 </ashitacast>

@@ -61,21 +61,14 @@
 			<feet>Skulk. Poulaines +1</feet>
 		</set>
 
-		<set name="fTPWS-Default">
+		<set name="fTPWS-Default" baseset="WS-Default">
 			<head>Pill. Bonnet +1</head>
 			<body>Pillager's Vest +1</body>
 			<hands>Pill. Armlets +1</hands>
-			<legs>Pill. Culottes +1</legs>
-			<feet>Plun. Poulaines +1</feet>
-			<neck>Ej Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1 augment="S1100398455412612800">Avenger's Earring</ear2>
-			<ear2 augment="S797537937839468334">Moonshade Earring</ear2>
-			<ring1 augment="S7093246396013218759">Dark Ring</ring1>
-			<ring2 augment="S1815550315936418759">Dark Ring</ring2>
-			<back>Bushido Cape</back>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
 		</set>
-		<set name="fTPWS-TH" baseset="CritWS-Default">
+		<set name="fTPWS-TH" baseset="fTPWS-Default">
 			<hands>Plun. Armlets +1</hands>
 			<legs>Plun. Culottes +1</legs>
 			<feet>Skulk. Poulaines +1</feet>
@@ -169,6 +162,7 @@
 	</premagic>
 
 	<midmagic>
+		<equip set="Stand" />
         <if ad_skill="bluemagic|enfeeblingmagic|elementalmagic|darkmagic">
             <equip set="MACC" />
         </if>
@@ -180,16 +174,6 @@
 		<if ad_name="en*">
 			<equip set="Enspell" />
 		</if>
-        <if ad_name="Stoneskin|Metallic*|Diamondhide">
-            <if buffactive="37">
-                <command>/cancel 37</command>
-            </if>
-        </if>
-        <if ad_name="Shock Spikes">
-            <if buffactive="38">
-                <command>/cancel 38</command>
-            </if>
-        </if>
 	</midmagic>
 
 	<idlegear>
